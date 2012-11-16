@@ -24,6 +24,8 @@ class testApp : public ofxiPhoneApp{
         void deviceOrientationChanged(int newOrientation);
 	ofxFTGLESFont font;
 	wstring str;
+	vector<ofVec2f>strip;
+	
 };
 
 

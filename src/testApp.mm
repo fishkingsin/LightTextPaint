@@ -12,15 +12,19 @@ void testApp::setup(){
 	ofBackground(0);
 	str = L"我是香港人" ;
 	font.loadFont("LiHei.ttf", ofGetHeight(), true);
+	strip.assign(ofGetWidth(), ofVec2f());
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-
+	strip[0].x = ofxAccelerometer.getForce().x;
+	strip[0].y = ofxAccelerometer.getForce().y;
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
+	
+	
 	ofSetColor(255);
 	font.drawString(str, ofGetWidth() - ( (ofGetFrameNum()*30) % int(font.getStringBoundingBox(str, 0,0).width + ofGetWidth())), ofGetHeight());
 	
