@@ -1,0 +1,11 @@
+ofxNetwork
+ofxOsc
+ofxXmlSettings
+ofxAccelerometer
+ofxBonjour
+ofxFTGLES
+ofxiOSSoundPlayer
+ofxiPhone
+ofxMultiTouch
+ofxSettings
+ofxUI
